@@ -1,0 +1,19 @@
+{
+  "name": "my-lib-test-2000",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/my-lib-test-2000"
+  },
+  "ng-add": {
+    "save": "true"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../node-modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add my-lib to the project",
+      "factory": "./ng-add/index#ngAdd"
+    },
+    "add-theme": {
+      "description": "Adding primeng styles and our custome theme files.",
+      "factory": "./add-theme/index#addTheme",
+      "schema": "./add-theme/schema.json"
+    }
+  }
+}
